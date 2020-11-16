@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>KALKULATOR MOCY PRĄDU I KOSZTÓW ENERGII ELEKTRYCZNEJ</h1>
+    <h3>Obliczenie Zużycia energii elektrycznej w określonej ilości minut</h3>
+    <span>Moc urządzenia: </span><input id='moc'/><span> watów</span><br />
+    <div>Wybierz jednostkę czasu</div>
+    <div style='display:flex;'>
+        <input type="radio" id="minuty" name="gender" value="minuty">
+        <label for="minuty">Minuty</label><br>
+        <input type="radio" id="godziny" name="gender" value="godziny">
+        <label for="godziny">Godziny</label><br>
+        <input type="radio" id="dni" name="gender" value="dni">
+        <label for="dni">Dni</label>
+    </div>
+    <span>Czas pracy urządzenia: </span><input id='czas'/><br />
+    <span>Koszt pracy urządzenia o mocy: </span><input id='koszt'/><span> zł</span><br />
+    <button id='zuzycie'>Oblicz</button>
+    <span>Wynik: </span><span id='wynik'></span><span> PLN</span>
+    <h3>Obliczenie MOCY na podstawie PRĄDU 400 V</h3>
+    <span>Natężenie prądu: </span><input id='natezenie'/><span> amperów</span><br />
+    <span>Wynik: </span><span id='wynik2'></span><span> KW</span><br />
+    <button id='moc_wynik'>Oblicz</button>
+</body>
+</html>
